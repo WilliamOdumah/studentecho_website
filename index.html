@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Echo - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <img src="images/logo.png" alt="Student Echo Logo">
+                <a href="index.html" class="navbar-brand">Student Echo</a>
+            </div>
+            <div class="navbar-menu">
+                <button id="hamburger-button" aria-label="Open menu">&#9776;</button> <!-- Menu icon -->
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Fullscreen Overlay Menu -->
+    <div id="menuOverlay" class="overlay">
+        <button class="closebtn" onclick="closeMenu()">&times;</button> 
+        <div class="overlay-content">
+            <img src="images/logo.png" alt="Logo" class="overlay-logo"> <!-- Overlay logo -->
+            <a href="vision.html">Our Vision</a>
+            <a href="features.html">Key Functionality</a>
+            <a href="team.html">Meet the Creators</a>
+            <a href="postmortem.html">Our Experience</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    
+    <!-- Split Layout for App Showcase -->
+    <div class="split-layout">
+        <div class="text-content">
+            <h1>Student Rating Platform</h1>
+            <p>Student Echo is a dedicated service that enables verified students 
+                to provide and access insightful evaluations of courses and instructors 
+                at the University of Manitoba.</p>
+            <a href="downloads/app-debug.apk" class="btn-download" download>Download Here</a>
+            <a href="features.html" class="btn-download">See Features</a>
+        </div>
+        <div class="device-video-wrapper">
+            <img src="images/device_frame.png" alt="Device Frame" class="device-frame">
+            <video class="device-screen" autoplay loop muted playsinline>
+                <source src="videos/app_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+    </div>
+    
+    <!-- Main Content -->
+    <main>
+        <section id="overview">
+            <h2>Project Overview</h2>
+            <p>Discover Student Echo - a collaborative platform where student insights transform educational experiences. Learn more about our full vision and user engagement by navigating through the menu.</p>
+        </section>
+        <section id="vision">
+            <h2>Vision Statement</h2>
+            <p>Student Echo offers a dynamic forum for students to rate courses and instructors, fostering a space for community-driven academic improvement. Editable and interactive, it’s the pulse of student feedback.</p>
+        </section>
+        <section id="users">
+            <h2>Intended Users</h2>
+            <p>Designed for the diverse voices of the University of Manitoba community, Student Echo serves not just students but academic stakeholders at large, with aspirations to connect multiple universities under its umbrella.</p>
+        </section>
+    </main>
+    
+
+    <script src="js/script.js"></script>
+    <footer>
+        <p>© Key Value Pairs. All rights reserved.</p>
+    </footer>
+</body>
+</html>
