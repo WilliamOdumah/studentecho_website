@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team - Student Echo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body style="background: white;">
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <img src="images/logo.png" alt="Student Echo Logo">
+                <a href="index.html" class="navbar-brand">Student Echo</a>
+            </div>
+            <div class="navbar-menu">
+                <button id="hamburger-button" aria-label="Open menu">&#9776;</button> <!-- Menu icon -->
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Fullscreen Overlay Menu -->
+    <div id="menuOverlay" class="overlay">
+        <button class="closebtn" onclick="closeMenu()">&times;</button> 
+        <div class="overlay-content">
+            <img src="images/logo.png" alt="Logo" class="overlay-logo"> <!-- Overlay logo -->
+            <a href="index.html">Home</a>
+            <a href="vision.html">Our Vision</a>
+            <a href="features.html">Key Functionality</a>
+            <a href="postmortem.html">Our Experience</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    
+    <main>
+        <section id="team">
+            <h2>Contributors/Team Members</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="images/brett.jpeg" alt="brett" class="team-member-photo">
+                    <h3>Brett Aseltine</h3>
+                    <h4>Developer/System Integrator</h4>
+                    <p>Brett played a pivotal role in maintaining the integrity of our codebase. 
+                        His dedication to organization and clean code principles was instrumental in keeping our project maintainable and scalable. 
+                        He spearheaded critical tests that assured quality and contributed significantly to developing key features that enhanced our application's functionality and user experience.
+                    </p>
+                </div>
+                <div class="team-member">
+                    <img src="images/kelly.jpg" alt="kelly" class="team-member-photo">
+                    <h3>Kelly Villamayor</h3>
+                    <h4>Developer/System Architect</h4>
+                    <p>Kelly was a driving force in both leading group discussions and in laying the groundwork for our application's architecture. 
+                        Her leadership in these conversations allowed for a collaborative environment where ideas could flourish. 
+                        Additionally, her contributions to the project's documentation have been invaluable, ensuring clarity and coherence. On the development front, Kelly was instrumental in implementing critical features within our authentication process and crafting the user settings interface, greatly enhancing the user journey.
+                    </p>
+                </div>
+                <div class="team-member">
+                    <img src="images/ning.webp" alt="ning" class="team-member-photo">
+                    <h3>Ning Liu</h3>
+                    <h4>Developer/Database Developer</h4>
+                    <p>Ning was pivotal in the construction and integration of our architecture. 
+                        Her foresight in planning and visualization was key in outlining our project’s architectural roadmap. Beyond her technical expertise, Ning was also central to organizing team meetings, ensuring seamless communication and collaboration. 
+                        Her development work on implementing advanced search and filter capabilities has greatly enhanced the user experience of our application.
+                    </p>
+                </div>
+                <div class="team-member">
+                    <img src="images/risham.jpg" alt="risham" class="team-member-photo">
+                    <h3>Rishamdeep Singh</h3>
+                    <h4>Developer/Quality Assurance</h4>
+                    <p>Rishamdeep was a cornerstone of our quality assurance efforts, continually expanding his expertise to ensure our app operated flawlessly. 
+                        His proactive approach to learning and testing set high standards for functionality and reliability. 
+                        He took the lead on implementing pivotal features such as the 'badwords.txt' filter, enhancing the user authentication process, and refining our app's notification system, each contributing significantly to a secure and user-friendly experience.
+                    </p>
+                </div>
+                <div class="team-member">
+                    <img src="images/william.jpg" alt="william" class="team-member-photo">
+                    <h3>William Odumah</h3>
+                    <h4>Developer/UI UX Design</h4>
+                    <p>William was instrumental in the foundational development of our platform's core features, including the intricate reviews system and the dynamic notifications functionality. 
+                        His flair for design and innovation was evident in his contributions to the app's interface, making it both functional and visually appealing. 
+                        His knack for ideation brought forward creative solutions that have significantly shaped the application's user experience.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <div class="contact">
+            <h2>Contact</h2>
+                <ul>
+                    <li>Brett: aseltinb@myumanitoba.ca</li>
+                    <li>Ning: liun1@myumanitoba.ca</li>
+                    <li>Risham: singhe50@myumanitoba.ca</li>
+                    <li>William: odumahw@myumanitoba.ca</li>
+                    <li>Kelly: villamak@myumanitoba.ca</li>
+                </ul>
+        </div>
+            
+    </main>
+    <footer>
+        <p>© Key Value Pairs. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Postmortem - Student Echo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <img src="images/logo.png" alt="Student Echo Logo">
+                <a href="index.html" class="navbar-brand">Student Echo</a>
+            </div>
+            <div class="navbar-menu">
+                <button id="hamburger-button" aria-label="Open menu">&#9776;</button> <!-- Menu icon -->
+            </div>
+        </nav>
+        <!-- Fullscreen Overlay Menu -->
+        <div id="menuOverlay" class="overlay">
+            <button class="closebtn" onclick="closeMenu()">&times;</button> 
+            <div class="overlay-content">
+                <img src="images/logo.png" alt="Logo" class="overlay-logo"> <!-- Overlay logo -->
+                <a href="index.html">Home</a>
+                <a href="vision.html">Our Vision</a>
+                <a href="team.html">Meet the Creators</a>
+                <a href="postmortem.html">Our Experience</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Overall Architecture</h2>
+            <p>The Student Echo app adopts a three-tier architecture, ensuring a clear separation between the user interface, business logic, and database management. 
+                The front end features intuitive activities for user interactions, while the back end runs on robust Java code ensuring logical operations are efficiently executed. 
+                Data is managed through SQL, allowing for reliable and structured data storage and retrieval. 
+                This design ensures maintainability, scalability, and a seamless user experience.</p>
+            <img class="architecture-image" src="images/architecture.png" alt="architecture">
+        </section>
+    
+        <section>
+            <h2>What Went Right</h2>
+            <p>The development process saw the successful implementation of most planned features, fostering a positive team environment where collaboration and enjoyment went hand in hand.</p>
+        </section>
+        
+        <section>
+            <h2>What Went Wrong</h2>
+            <p>We faced the common challenge of merge conflicts, underestimating the complexity of our app's architecture and size, which led to a crunch time during system testing.</p>
+        </section>
+        
+        <section>
+            <h2>Starting Over</h2>
+            <p>Looking back, a phased approach starting with a smaller project scope would have been beneficial, alongside integrating test-driven development from the start to avoid last-minute bugs.</p>
+        </section>
+        
+        <section>
+            <h2>Project Size and Composition</h2>
+            <p>The project evolved to include numerous methods and classes with substantial time devoted to system testing, which was unexpectedly time-consuming.</p>
+        </section>
+        
+        <section>
+            <h2>Time Investment</h2>
+            <p>The bulk of our time was invested in system testing, with UI design being the least time-consuming. Surprisingly, the amount of time required for tests was more than anticipated.</p>
+        </section>
+        
+        <section>
+            <h2>Design Decisions and Smells</h2>
+            <p>Our decision to integrate Bookmarks and Action Alerts added significant value, though we did encounter code smells such as tight coupling that we aim to address.</p>
+        </section>
+        
+        <section>
+            <h2>Outstanding Bugs</h2>
+            <p>Minor bugs remain post-development, providing learning opportunities for future projects.</p>
+        </section>
+        
+        <section>
+            <h2>Unexpectedly Successful Features</h2>
+            <p>The Bookmarks and Notification features integrated seamlessly, exceeding our expectations in user engagement and functionality.</p>
+        </section>
+        
+        <section>
+            <h2>Development Techniques</h2>
+            <p>While we did not employ specific methodologies like TDD or pair programming, regular and frequent meetings underpinned our project's progress.</p>
+        </section>
+        
+        <section>
+            <h2>Project Evolution</h2>
+            <p>Our project's direction saw adjustments throughout its iterations, improving feature descriptions and user stories to better meet users' needs.</p>
+        </section>
+        
+        <section>
+            <h2>Lessons Learned</h2>
+            <p>Developing in smaller increments, maintaining fluid communication, and conducting code reviews before merges are practices we aim to incorporate moving forward.</p>
+        </section>
+        
+        <section>
+            <h2>Conclusions</h2>
+            <p>Our experience was a testament to teamwork and adaptability. Despite the pressures, we delivered a comprehensive product, learning valuable lessons about collaboration and project management.</p>
+            <p>Finished our project... But at what cost</p>
+            <img src="images/meme.png" alt="spangebob meme">
+        </section>
+        
+    </main>
+
+    <script src="js/script.js"></script>
+    <footer>
+        <p>© Key Value Pairs. All rights reserved.</p>
+    </footer>
+</body>
+</html>
