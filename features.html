@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - Student Echo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <img src="images/logo.png" alt="Student Echo Logo">
+                <a href="index.html" class="navbar-brand">Student Echo</a>
+            </div>
+            <div class="navbar-menu">
+                <button id="hamburger-button" aria-label="Open menu">&#9776;</button> <!-- Menu icon -->
+            </div>
+        </nav>
+        <!-- Fullscreen Overlay Menu -->
+        <div id="menuOverlay" class="overlay">
+            <button class="closebtn" onclick="closeMenu()">&times;</button> 
+            <div class="overlay-content">
+                <img src="images/logo.png" alt="Logo" class="overlay-logo"> <!-- Overlay logo -->
+                <a href="index.html">Home</a>
+                <a href="vision.html">Our Vision</a>
+                <a href="team.html">Meet the Creators</a>
+                <a href="postmortem.html">Our Experience</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="features">
+            <h2>Features</h2>
+
+            <ul class="feature-list">
+                <li><a href="#user-authentication">User Authentication</a></li>
+                <li><a href="#dynamic-review-system">Dynamic Review System</a></li>
+                <li><a href="#user-profile-settings">User Profile Settings</a></li>
+                <li><a href="#bookmarking">Bookmarking</a></li>
+                <li><a href="#notification-system">Notification System</a></li>
+                <li><a href="#search-content-contribution">Search and Content Contribution</a></li>
+            </ul>
+            <div id="user-authentication" class="feature-item">
+                <h3>User Authentication</h3>
+                <p>Allows users to create accounts, log in, and log out securely.</p>
+                <video controls poster="images/user_auth_thumb.jpg">
+                  <source src="videos/sign-up.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+            </div>
+            <div id="dynamic-review-system" class="feature-item">
+                <h3>Dynamic Review System</h3>
+                <p>Displays reviews for various courses and instructors and enables users to write, edit and delete their reviews.</p>
+                <video controls poster="images/write_review_thumb.png">
+                  <source src="videos/write_review.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <video controls poster="images/app_screenshot.png">
+                    <source src="videos/edit_review.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video controls poster="images/delete_review_thumb.png">
+                    <source src="videos/delete_review.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Notice how aveverage rating change as new reviews are added</p>
+            </div>
+            <div id="user-profile-settings" class="feature-item">
+                <h3>User Profile Settings</h3>
+                <p>Provides a user profile section where users can view and edit their personal information. Including account termination</p>
+                <video controls poster="images/app_screenshot.png">
+                  <source src="videos/change_username.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <video controls poster="images/app_screenshot.png">
+                    <source src="videos/delete_account.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div id="bookmarking" class="feature-item">
+                <h3>Bookmarking</h3>
+                <p>Allows users to bookmark favorite courses or instructors for quick access.</p>
+                <video controls poster="images/app_screenshot.png">
+                  <source src="videos/bookmark_course.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+            </div>
+            <div id="notification-system" class="feature-item">
+                <h3>Notification System/ Interacttion system</h3>
+                <p>Allows users to interact with reviews by either liking or disliking & sends in-app notifications to users for various events, such as when someone interacts with their review or when there is a new review on a bookmarked course or instructor.</p>
+                <video controls poster="images/notification_thumb.png">
+                  <source src="videos/multiple_interaction_notifications.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <video controls poster="images/notification_thumb.png">
+                    <source src="videos/bookmark_notification.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div id="search-content-contribution" class="feature-item">
+                <h3>Search and Content Contribution Functionality</h3>
+                <p>Enables users to search for specific courses or instructors. Also allows users to add new/missing courses or instructors to our database</p>
+                <video controls poster="images/app_screenshot.png">
+                  <source src="videos/add_new_course.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <video controls poster="images/app_screenshot.png">
+                    <source src="videos/add_new_prof.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <script src="js/script.js"></script>
+</body>
+</html>
